@@ -5,9 +5,9 @@ public class EmployeeWageClassMethod {
 	
 	static final int Present = 1;
 	static final int Part_Time = 2;
-	static final int WagePerHour = 20;
-	static final int TotalWorkingDays = 20;
-	static int TotalWorkingHours = 100;
+//	static final int WagePerHour = 20;
+//	static final int TotalWorkingDays = 20;
+//	static int TotalWorkingHours = 100;
 	
 	public static int employee()
 	{
@@ -18,7 +18,7 @@ public class EmployeeWageClassMethod {
 	
 	}
 	
-	public static int EmpWageMethod()
+	public static int EmpWageMethod(String Company, int WagePerHour,int TotalWorkingDays,int TotalWorkingHours )
 	{
 		int Wage = 0;
 		int WorkingHour = 0;
@@ -57,10 +57,12 @@ public class EmployeeWageClassMethod {
 		}
 		
 		TotalEmpWage = TotalWorkingHours * WagePerHour;
-		System.out.println("Total Employee Wage is "+TotalEmpWage);
+		System.out.println("Total Employee Wage at " + Company + " is "+ TotalEmpWage);
 		
 		return TotalEmpWage; 
 	}
 		
 }
+
+
 
