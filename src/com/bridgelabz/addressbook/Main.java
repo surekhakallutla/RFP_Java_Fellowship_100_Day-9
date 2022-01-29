@@ -26,8 +26,14 @@ public class Main {
 			case 2:
 				contactController.editByName(ScannerUtility.getString("Enter the Contact Name to Edit"));
 				break;
+			case 3:
+				contactController.deleteContact(ScannerUtility.getString("Enter the Contact Name to Delete"));
+				break;
+			case 4:
+				contactController.display();
+				break;
 			}
-			
+			System.out.println(userInterface.showMainMenu());
 			i = scn.nextInt();
 		}while(i == 1);
 	}

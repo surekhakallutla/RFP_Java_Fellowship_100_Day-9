@@ -2,14 +2,14 @@ package com.bridgelabz.addressbook;
 
 public class Contact {
 	
-	private String fname;
-	private String lname;
-	private String address;
-	private String city;
-	private String state;
-	private long zip;
-	private String phonenumber;
-	private String email;
+	String fname;
+	String lname;
+	String address;
+	String city;
+	String state;
+	long zip;
+	String phonenumber;
+	String email;
 
 	public String getFname() {
 		return fname;

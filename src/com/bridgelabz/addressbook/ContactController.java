@@ -46,7 +46,7 @@ public class ContactController {
 	public void editByName(String name) {
 		for (Contact contact : contactList) {
 			
-			if (name.equalsIgnoreCase(contact.getFname())) {
+			if (name.equals(contact.fname)) {
 				editContact(contact);
 			} 
 			
@@ -54,5 +54,26 @@ public class ContactController {
 				System.out.println("Contact not found");
 			}
 		}
+	}
+	
+	public void deleteContact(String name) {
+		
+		for (Contact contact : contactList) {
+			
+			if (name.equals(contact.fname)) {
+				contactList.remove(contact);
+				System.out.println("Contact removed successfully.");
+				break;
+			} 
+			
+			else {
+				System.out.println("Contact not found");
+			}
+		}
+	}
+	
+	public void display() {
+		ContactController contactController = new ContactController();
+		System.out.println(contactController.getContactList());
 	}
 }
