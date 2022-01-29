@@ -8,8 +8,11 @@ public class Main {
 	}
 	
 	public static void main(String[] args) {
+
+		ContactController contactController = new ContactController();	
+		contactController.add();
+		System.out.println("Added a new record");
 		
-	
 	}
 
 }
