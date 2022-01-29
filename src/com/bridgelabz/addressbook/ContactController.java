@@ -61,6 +61,7 @@ public class ContactController {
 		for (Contact contact : contactList) {
 			
 			if (name.equals(contact.fname)) {
+				System.out.println(contact.fname);
 				contactList.remove(contact);
 				System.out.println("Contact removed successfully.");
 				break;
@@ -74,6 +75,6 @@ public class ContactController {
 	
 	public void display() {
 		ContactController contactController = new ContactController();
-		System.out.println(contactController.getContactList());
+		System.out.println(contactList);
 	}
 }

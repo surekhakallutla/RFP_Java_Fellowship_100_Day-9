@@ -33,7 +33,7 @@ public class Main {
 				contactController.display();
 				break;
 			}
-			System.out.println(userInterface.showMainMenu());
+			System.out.println("Press 1 to continue");
 			i = scn.nextInt();
 		}while(i == 1);
 	}
