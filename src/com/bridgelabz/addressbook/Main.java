@@ -32,6 +32,8 @@ public class Main {
 			case 4:
 				contactController.display();
 				break;
+			default:
+				break;
 			}
 			System.out.println("Press 1 to continue");
 			i = scn.nextInt();
@@ -40,12 +42,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 
+/*
 		ContactController contactController = new ContactController();	
 		contactController.add();
-		
+*/		
 		Main main = new Main();
 		main.handleUserSelection();
-//		System.out.println("Added a new record");
+
 		
 	}
 
