@@ -26,7 +26,7 @@ public class Main {
 			break;
 		case 3:
 			String userSelection = userInterface.selectContact();
-			Contact contact = contactController.getContact(userSelection);
+			ContactInfo contact = contactController.getContact(userSelection);
 			System.out.println("Contact = "+contact);
 			contactController.getContactList().remove(contact);
 			System.out.println("Medicine Removed Successfully");
@@ -45,7 +45,7 @@ public class Main {
 	
 
 	public void addContact() {
-		Contact contact = new Contact();
+		ContactInfo contact = new ContactInfo();
 		
 		System.out.println("Enter First Name");
 		contact.fname = scn.StringInput();
@@ -73,7 +73,7 @@ public class Main {
 		UserInterface userInterface = UserInterface.getInstance();
 		String firstname = userInterface.selectContact();
 		
-		Contact contactForUpdate = contactController.getContact(firstname);
+		ContactInfo contactForUpdate = contactController.getContact(firstname);
 		System.out.println(contactForUpdate);
 		
 		int updateChoice = userInterface.showUpdateMenu();

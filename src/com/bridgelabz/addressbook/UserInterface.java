@@ -19,7 +19,7 @@ public class UserInterface {
 		return instance;
 	}
 	
-	public void print(ArrayList<Contact> contactList) {
+	public void print(ArrayList<ContactInfo> contactList) {
 		for(Object contact : contactList) {
 			System.out.println(contact);
 		}
